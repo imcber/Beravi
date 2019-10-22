@@ -1,0 +1,26 @@
+.filler {
+    flex: 1 1 auto;
+ }
+ .gap {
+    margin-right: 10px;
+ }
+
+ .navbar-top{
+    height: 65px;
+    position: fixed;
+    background-color: #fff0 !important;
+    z-index: 3000;
+   span{
+    font-family: 'Muli', sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    padding-right: 19%;
+   }
+ }
+
+.navbar-top.solid-nav{
+   background-color: #ffffffc9 !important;
+   span{
+      color: #1995AD;
+   }
+}

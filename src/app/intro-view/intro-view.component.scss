@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:600&display=swap');
+
+.imgIntro{
+    height: 100vh;
+}
+
+.introdiv{
+    //background-color: #5BC8AC;
+    background-color: #1995AD;
+    height: 150%;
+}
+
+.list-div{
+    background-color: #FFFFFF;
+    span{
+        color: #000000;
+    }
+}
+
+.txt-intro{
+    span{
+        color: #F1F1F2;
+        display: flex;
+        text-align: center;
+    }
+    span.intro-main-title{
+        font-family: 'Poppins', sans-serif;;
+        font-size: 2em;
+        padding-bottom: 1em;
+    }
+    span.intro-main-sub-title{
+        font-family: 'Archivo', sans-serif;
+        font-size: 1em;
+        display: block;
+    }
+    span.intro-main-summary{
+        font-family: 'Archivo', sans-serif;
+        font-size: 3em;
+        display: block;
+        padding: 5em;
+        text-align: justify;
+    }
+}
+
+.list-image{
+    height: 8em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+}
+
+.div-list-image{
+    height: 50%;
+    text-align: center;
+    padding-left: 2em;
+}

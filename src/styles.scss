@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.img-intro-cont .mat-figure {
+    justify-content: flex-start !important ;
+    align-items: baseline !important;
+ }
+ 
+ .hide{
+     display: none !important;
+ }
+
+ .prcpl-color-bg{
+     background-color: #1995AD;
+ }

@@ -1,0 +1,24 @@
+<mat-grid-list cols="2" rowHeight="25vh" class="">
+    <mat-grid-tile [colspan]="1" [rowspan]="2" class="txt-body">
+        <div>
+            <span class="body-main-title">MISIÓN<br></span>
+            <span class="body-main-sub-title">{{_textMision}}</span>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="4">
+        <div>
+            <img #imgIntro class="imgbody" src="../../assets/img/mision.jpg">
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="3">
+        <div >
+            <img #imgIntro style="height: 22em;" src="../../assets/img/vision.jpg">
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="2" class="txt-body">
+        <div>
+            <span class="body-main-title">VISION<br></span>
+            <span class="body-main-sub-title">{{_textVision}}</span>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>

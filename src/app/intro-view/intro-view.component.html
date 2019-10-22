@@ -1,0 +1,33 @@
+<mat-grid-list cols="2" rowHeight="25vh" class="introdiv">
+    <mat-grid-tile [colspan]="1" [rowspan]="4" class="img-intro-cont">
+        <div>
+            <img #imgIntro class="imgIntro" src="../../assets/img/strategy.jpg">
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="2" class="txt-intro">
+        <div>
+            <span class="intro-main-title">ALTA DIRECCIÓN EMPRESARIAL <br> BERAVI</span>
+            <span class="intro-main-sub-title">Servicios Contables, Fiscales Y Administrativos</span>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="2" class="txt-intro">
+            <div>
+                <img #imgLogoIntro style="height: 25em;" src="../../assets/img/intro2R.jpg">
+            </div>
+        </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="3" class="txt-intro">
+            <div #divListService>
+                <span class="intro-main-summary">{{summaryMsg}}</span>
+            </div>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="1" rowHeight="50vh" class="list-div">       
+    <mat-grid-tile [colspan]="1" [rowspan]="1" class="">
+        <div *ngFor="let item of listImgService" class="div-list-image">
+            <img class="list-image animated bounceIn" src="../../assets/img/listServices/{{item.imgName}}" [hidden]="!item.visible">
+            <br>
+            <span [hidden]="!item.visible">{{item.text}}</span>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
