@@ -15,3 +15,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
  .prcpl-color-bg{
      background-color: #1995AD;
  }
+
+ .animatedIMC {
+    -webkit-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+    -webkit-transition-duration: 1s !important;
+    transition-duration: 1s !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+  }

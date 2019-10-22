@@ -25,7 +25,7 @@
 <mat-grid-list cols="1" rowHeight="50vh" class="list-div">       
     <mat-grid-tile [colspan]="1" [rowspan]="1" class="">
         <div *ngFor="let item of listImgService" class="div-list-image">
-            <img class="list-image animated bounceIn" src="../../assets/img/listServices/{{item.imgName}}" [hidden]="!item.visible">
+            <img class="list-image animatedIMC bounceIn" src="../../assets/img/listServices/{{item.imgName}}" [hidden]="!item.visible">
             <br>
             <span [hidden]="!item.visible">{{item.text}}</span>
         </div>
