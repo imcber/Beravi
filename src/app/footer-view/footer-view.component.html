@@ -3,23 +3,23 @@
   <div style="background-color: #4D648D;">
     <div class="container">
       <div class="row py-4 d-flex align-items-center">
-        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+        <div class="col-md-12 col-lg-12 text-center text-md-center mb-4 mb-md-0">
+          <h6 class="mb-0">En memoria del C.P. Bernardo Ramírez Vivían</h6>
+        </div>
+        <!--<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
           <h6 class="mb-0">¡Encuentranos en nuestras redes sociales!</h6>
         </div>
         <div class="col-md-6 col-lg-7 text-center text-md-right">
-          <!-- Facebook -->
           <a>
             <fa-icon class="media-social-list" [icon]="['fab', 'facebook-f']"></fa-icon>
           </a>
-          <!-- Twitter -->
           <a class="">
             <fa-icon class="media-social-list" [icon]="['fab', 'twitter']"></fa-icon>
           </a>
-          <!--Instagram-->
           <a class="">
             <fa-icon class="media-social-list" [icon]="['fab', 'instagram']"></fa-icon>
           </a>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
@@ -34,12 +34,10 @@
         </p>
         <a href="#">¡Da click para conocernos!</a>
         <br>
-        <div class="dev-social">    
-          <fa-icon class="dev-social-list" [icon]="['fab', 'facebook-f']"></fa-icon>
-          <fa-icon class="dev-social-list" [icon]="['fab', 'twitter']"></fa-icon>
-          <fa-icon class="dev-social-list" [icon]="['fab', 'instagram']"></fa-icon>
-          <fa-icon class="dev-social-list" [icon]="['fab', 'dribbble']"></fa-icon>
-          <fa-icon class="dev-social-list" [icon]="['fab', 'github']"></fa-icon>
+        <div class="dev-social">
+          <a *ngFor="let item of _devSocialList" href="{{item.href}}">
+            <fa-icon class="dev-social-list" [icon]="[item.pre, item.icon]"></fa-icon>
+          </a>
         </div>
       </div>
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -49,7 +47,7 @@
             <fa-icon class="contact-list" [icon]="['fas', 'home']"></fa-icon> Fdz. de Lizardi, 603, Pachuca, Hgo
         </p>
         <p>
-            <fa-icon class="contact-list" [icon]="['fas', 'envelope']"></fa-icon> beravi@gmail.com
+            <fa-icon class="contact-list" [icon]="['fas', 'envelope']"></fa-icon> altadirecberavi@gmail.com
         </p>
         <p>
             <fa-icon class="contact-list" [icon]="['fas', 'phone']"></fa-icon> 771 156 27 74

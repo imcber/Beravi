@@ -10,7 +10,7 @@ export class NavBarComponent{
   constructor(private renderer: Renderer2) { }
   @ViewChild("navbartop",{static:false}) navBar: ElementRef;
 
-  @HostListener("window:scroll", ['$event'])
+  /*@HostListener("window:scroll", ['$event'])
   scrollEventImg($event){
     if($event.srcElement.children[0].scrollTop < 330){
       //this.navBar["_elementRef"].nativeElement.style.transform = "translateX(-"+ $event.srcElement.children[0].scrollTop +"px) translateY(0px)";
@@ -26,5 +26,5 @@ export class NavBarComponent{
       this.renderer.addClass(this.navBar["_elementRef"].nativeElement, "hide");
      // this._animation = "fadeOut";
     }
-  }
+  }*/
 }

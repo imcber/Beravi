@@ -9,7 +9,22 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
   styleUrls: ['./footer-view.component.scss']
 })
 export class FooterViewComponent{
+  _devSocialList:ListDevSocial = [
+    {pre:"fab",icon:"twitter",href:""},
+    {pre:"fab",icon:"instagram",href:""},
+    {pre:"fab",icon:"dribbble",href:"https://dribbble.com/shots/7706777-Beravi"},
+    {pre:"fab",icon:"github",href:"https://github.com/imcber"}
+  ];
+
   constructor(private library: FaIconLibrary) {
     library.addIcons(faTwitter,faInstagram,faFacebookF,faHome,faEnvelope,faPhone,faDribbble,faGithub);
   }
 }
+
+interface socialDev {
+  pre: string;
+  icon: string;
+  href: string;
+}
+
+interface ListDevSocial extends Array<socialDev>{}
