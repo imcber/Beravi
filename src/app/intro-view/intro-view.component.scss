@@ -1,14 +1,76 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:600&display=swap');
 
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 300px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 600px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
 .imgIntro{
-    height: 100vh;
+    @include sm{
+        height: 100%;
+        width: 100%;
+    }
+    @include xl{
+        height: 100vh;
+    }
 }
 
+.intro-sm{
+    @include sm{
+        display: block;
+    }
+    @include xl{
+        display: none;
+    }
+}
+
+.intro-xl{
+    @include sm{
+        display: none;
+    }
+    @include xl{
+        display: block;
+    }
+}
 .introdiv{
     //background-color: #5BC8AC;
     background-color: #1995AD;
-    height: 150%;
 }
 
 .list-div{
@@ -26,20 +88,37 @@
     }
     span.intro-main-title{
         font-family: 'Poppins', sans-serif;;
-        font-size: 2em;
         padding-bottom: 1em;
+        @include sm{
+            font-size: 1em;
+            display: block;
+        }
+        @include xl{
+            font-size: 2em;
+        }
     }
     span.intro-main-sub-title{
         font-family: 'Archivo', sans-serif;
-        font-size: 1em;
         display: block;
+        @include sm{
+            font-size: 15px;
+        }
+        @include xl{
+            font-size: 1em;
+        }
     }
     span.intro-main-summary{
         font-family: 'Archivo', sans-serif;
-        font-size: 3em;
         display: block;
-        padding: 5em;
         text-align: justify;
+        @include sm{
+            font-size: 25px;
+            padding: 2em;
+        }
+        @include xl{
+            font-size: 3em;
+            padding: 5em;
+        }
     }
     span.intro-main-sub-title-2{
         font-family: 'Archivo', sans-serif;
@@ -48,15 +127,33 @@
     }
 }
 
-.list-image{
-    height: 8em;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-bottom: 1em;
-}
 
 .div-list-image{
     height: 50%;
     text-align: center;
-    padding-left: 2em;
+    @include sm{
+       padding-left: 1em;
+    }
+    @include xl{
+        padding-left: 2em;
+    }
+    .list-image{
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 1em;
+        @include sm{
+            height: 4em;
+        }
+        @include xl{
+            height: 8em;
+        }
+    }
+    .list-image-text{
+        @include sm{
+            font-size: 10px;
+        }
+        @include xl{
+            font-size: 1em;
+        }
+    }
 }

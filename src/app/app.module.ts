@@ -28,7 +28,6 @@ import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatGridListModule,
-    ReactiveFormsModule,
     FontAwesomeModule,
     WavesModule,
     ButtonsModule,
