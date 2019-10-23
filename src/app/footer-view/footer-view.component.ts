@@ -10,8 +10,7 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 })
 export class FooterViewComponent{
   _devSocialList:ListDevSocial = [
-    {pre:"fab",icon:"twitter",href:""},
-    {pre:"fab",icon:"instagram",href:""},
+    {pre:"fab",icon:"instagram",href:"https://www.instagram.com/ddevspace/"},
     {pre:"fab",icon:"dribbble",href:"https://dribbble.com/shots/7706777-Beravi"},
     {pre:"fab",icon:"github",href:"https://github.com/imcber"}
   ];
