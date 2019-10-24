@@ -141,12 +141,7 @@ $screen-xl-min: 1200px;
         padding-left: 3em;
         padding-right: 3em;
         padding-bottom: 1em;
-        @include sm{
-            height: 4em;
-        }
-        @include xl{
-            height: 8em;
-        }
+        height: 8em;
     }
     .list-image-text{
         @include sm{

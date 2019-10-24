@@ -24,3 +24,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
   }
+
+  
+.main-div-list{
+    .mat-figure{
+        justify-content: normal !important;
+    }
+}

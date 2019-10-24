@@ -42,7 +42,7 @@
 </mat-grid-list>
 
 <mat-grid-list cols="1" rowHeight="50vh" class="list-div">       
-    <mat-grid-tile [colspan]="1" [rowspan]="1" class="" style="overflow-x: auto;">
+    <mat-grid-tile [colspan]="1" [rowspan]="1" class="main-div-list" style="overflow-x: auto;">
         <div *ngFor="let item of listImgService" class="div-list-image">
             <img class="list-image animatedIMC bounceIn" src="../../assets/img/listServices/{{item.imgName}}" [hidden]="!item.visible">
             <br>
